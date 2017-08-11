@@ -1,0 +1,27 @@
+#!/bin/bash
+
+[ -f config ] && . config || { echo "config file not found.";exit 1; }
+
+# source all config
+for checkdir in $CheckDirs
+do
+    [ -f $checkdir/config ] && . $checkdir/config
+done
+
+# source common function
+for commonscript in $CommonScripts
+do
+    [ -f $commonscript ] && . $commonscript
+done
+
+# run chech scripts
+for checkscript in $CheckScripts
+do
+{
+    if [ -f $checkscript ];then
+        bash $checkscript
+    fi
+} &
+done
+
+wait

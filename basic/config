@@ -1,0 +1,12 @@
+BasicScripts=" \
+                $checkdir/shell/check-cpuspeed.sh   \
+                $checkdir/shell/check-disk.sh       \
+                $checkdir/shell/check-fanspeed.sh   \
+                $checkdir/shell/check-ipmi.sh       \
+                $checkdir/shell/check-nic.sh        \
+                $checkdir/shell/check-process.sh    \
+                $checkdir/shell/check-raid.sh       \
+                $checkdir/shell/check-ssd.sh        \
+                $checkdir/shell/check-swap.sh       \
+                "
+CheckScripts="$CheckScripts $BasicScripts"

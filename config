@@ -1,0 +1,3 @@
+CheckDirs="basic frontend cloud"
+
+. common/shell/common.sh

@@ -1,0 +1,9 @@
+BasicScripts=" \
+                $checkdir/shell/check-disk.sh       \
+                "
+CheckScripts="$CheckScripts $BasicScripts"
+
+BasicCommon="
+                $checkdir/shell/common.sh           \
+                "
+CommonScripts="$CommonScripts $BasicCommon"

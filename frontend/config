@@ -1,0 +1,6 @@
+FrontendScripts=" \
+                $checkdir/shell/check-irq.sh        \
+                $checkdir/shell/check-nginx.sh      \
+                $checkdir/shell/check-sysctl.sh     \
+                "
+CheckScripts="$CheckScripts $FrontendScripts"
