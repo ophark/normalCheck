@@ -22,7 +22,7 @@ check_nic()
             fi
             Speed=$(awk '/Speed:/{s+=$2}END{print s}' $Bondname)
             if [[ $Speed -ne 2000 && $Speed -ne 20000 ]];then
-                echo "$dn: Speed $Speed"
+                echo "$bn: Speed $Speed"
             fi
         done
    # else
